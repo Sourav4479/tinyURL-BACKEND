@@ -42,25 +42,6 @@ mongoose.Promise = global.Promise
 mongoose.connect(keys.url,{useNewUrlParser:true,useUnifiedTopology: true}).then(() => console.log('MongoDB connected...'))
 .catch((err) => console.log(err + ''))
 
-//MYSQL CONNECTION
-
-/* var connection = mysql.createConnection({
-    host     : 'rdfdatabase2.cqewcthnj9ha.ap-southeast-1.rds.amazonaws.com',
-    user     : 'admin',
-    password : 'KENrdf0x',
-    database : 'database_k'
-  });
-
-
-
-  connection.connect(function(err) {
-    if (err) {
-      console.error('error connecting: ' + err.stack);
-      return;
-    }
-   
-    console.log('connected as id ' + connection.threadId);
-  }); */
 /* app.use(passport.initialize());
 
 require('./config/passport')(passport); */
